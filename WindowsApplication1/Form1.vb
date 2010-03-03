@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    '200
+    '100
     'A globally unique Identifier.  Each Attachment_B document gets one
     Dim GUID As String
     Dim htFCtoSVC As Hashtable
