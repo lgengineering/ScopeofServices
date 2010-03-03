@@ -7,9 +7,12 @@
     Dim htFCtoFLAG As Hashtable
     Dim conn As New SqlClient.SqlConnection("Data Source=missas01;Initial Catalog=GeneralizedScope;Persist Security Info=True;User ID=sa;Password=sa")
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load, cbFC110AllC.AutoSizeChanged
+        ' Dim formsize As New Size(400, 300)
         Dim doc_id As Integer
         Dim fc_id As Integer
+
+        'Me.MaximumSize = formsize
 
         doc_id = 4
 
@@ -37,7 +40,7 @@
         Dim init_parent_id = 0
         For fc_id = 1 To 9
             PopulateDataView(init_parent_id, fc_id)
-            PopulateFlagsView(fc_id, doc_id)
+            'PopulateFlagsView(fc_id, doc_id)
         Next
     End Sub
 
@@ -762,10 +765,12 @@
             'Loop through each cell and check each checkbox and give it main checkbox value
             For Each dgvr In dgFC163Flags.Rows
                 dgvr.Cells(1).Value = True
+
                 If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
                     dgvr.Cells(1).Value = ""
                 End If
             Next
+
         ElseIf cbFC163AllC.Checked = False Then
             For Each dgvr In dgFC163Flags.Rows
                 dgvr.Cells(1).Value = False
@@ -776,5 +781,19 @@
         End If
 
     End Sub
+    'Private Su
+
+    '(BrowsableAttribute(True))
+    '    _
+    '    Public Overrides Property AutoSize() As Boolean
+
+    '    Dim instance As Form
+    '    Dim value As Boolean
+
+    'value = instance.AutoSize
+
+    'instance.AutoSize = value
+    'End Sub
+
 End Class
 
