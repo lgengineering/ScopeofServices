@@ -7,12 +7,10 @@
     Dim htFCtoFLAG As Hashtable
     Dim conn As New SqlClient.SqlConnection("Data Source=missas01;Initial Catalog=GeneralizedScope;Persist Security Info=True;User ID=sa;Password=sa")
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load, cbFC110AllC.AutoSizeChanged
-        ' Dim formsize As New Size(400, 300)
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC110AllC.AutoSizeChanged
         Dim doc_id As Integer
         Dim fc_id As Integer
 
-        'Me.MaximumSize = formsize
 
         doc_id = 4
 
@@ -781,19 +779,6 @@
         End If
 
     End Sub
-    'Private Su
-
-    '(BrowsableAttribute(True))
-    '    _
-    '    Public Overrides Property AutoSize() As Boolean
-
-    '    Dim instance As Form
-    '    Dim value As Boolean
-
-    'value = instance.AutoSize
-
-    'instance.AutoSize = value
-    'End Sub
 
 End Class
 
