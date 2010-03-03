@@ -367,5 +367,412 @@
         Catch ex As Exception
         End Try
     End Sub
+    Private Sub cbfc170alle_checkstatechanged(ByVal sender As System.Object, _
+       ByVal e As System.EventArgs) Handles cbFC170AllE.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC170AllE.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC170Flags.Rows
+                dgvr.Cells(0).Value = True
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        ElseIf cbFC170AllE.Checked = False Then
+            For Each dgvr In dgFC170Flags.Rows
+                dgvr.Cells(0).Value = False
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+
+
+    Private Sub cbFC170AllC_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC170AllC.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC170AllC.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC170Flags.Rows
+                dgvr.Cells(1).Value = True
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        ElseIf cbFC170AllC.Checked = False Then
+            For Each dgvr In dgFC170Flags.Rows
+                dgvr.Cells(1).Value = False
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        End If
+    End Sub
+
+    Private Sub cbFC110AllE_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC110AllE.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC110AllE.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC110Flags.Rows
+                dgvr.Cells(0).Value = True
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        ElseIf cbFC110AllE.Checked = False Then
+            For Each dgvr In dgFC110Flags.Rows
+                dgvr.Cells(0).Value = False
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+
+    Private Sub cbFC110AllC_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC110AllC.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC110AllC.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC110Flags.Rows
+                dgvr.Cells(1).Value = True
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        ElseIf cbFC110AllC.Checked = False Then
+            For Each dgvr In dgFC110Flags.Rows
+                dgvr.Cells(1).Value = False
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+
+
+    Private Sub cbFC120AllE_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC120AllE.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC120AllE.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC120Flags.Rows
+                dgvr.Cells(0).Value = True
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        ElseIf cbFC120AllE.Checked = False Then
+            For Each dgvr In dgFC120Flags.Rows
+                dgvr.Cells(0).Value = False
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC120AllC_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC120AllC.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC120AllC.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC120Flags.Rows
+                dgvr.Cells(1).Value = True
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        ElseIf cbFC120AllC.Checked = False Then
+            For Each dgvr In dgFC120Flags.Rows
+                dgvr.Cells(1).Value = False
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC130AllE_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC130AllE.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC130AllE.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC130Flags.Rows
+                dgvr.Cells(0).Value = True
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        ElseIf cbFC130AllE.Checked = False Then
+            For Each dgvr In dgFC130Flags.Rows
+                dgvr.Cells(0).Value = False
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC130AllC_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC130AllC.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC130AllC.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC130Flags.Rows
+                dgvr.Cells(1).Value = True
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        ElseIf cbFC130AllC.Checked = False Then
+            For Each dgvr In dgFC130Flags.Rows
+                dgvr.Cells(1).Value = False
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC150AllE_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC150AllE.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC150AllE.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC150Flags.Rows
+                dgvr.Cells(0).Value = True
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        ElseIf cbFC150AllE.Checked = False Then
+            For Each dgvr In dgFC150Flags.Rows
+                dgvr.Cells(0).Value = False
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC150AllC_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC150AllC.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC150AllC.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC150Flags.Rows
+                dgvr.Cells(1).Value = True
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        ElseIf cbFC150AllC.Checked = False Then
+            For Each dgvr In dgFC150Flags.Rows
+                dgvr.Cells(1).Value = False
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC160AllE_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC160AllE.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC160AllE.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC160Flags.Rows
+                dgvr.Cells(0).Value = True
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        ElseIf cbFC160AllE.Checked = False Then
+            For Each dgvr In dgFC160Flags.Rows
+                dgvr.Cells(0).Value = False
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC160AllC_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC160AllC.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC160AllC.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC160Flags.Rows
+                dgvr.Cells(1).Value = True
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        ElseIf cbFC160AllC.Checked = False Then
+            For Each dgvr In dgFC160Flags.Rows
+                dgvr.Cells(1).Value = False
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC161AllE_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC161AllE.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC161AllE.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC161Flags.Rows
+                dgvr.Cells(0).Value = True
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        ElseIf cbFC161AllE.Checked = False Then
+            For Each dgvr In dgFC161Flags.Rows
+                dgvr.Cells(0).Value = False
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC161AllC_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC161AllC.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC161AllC.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC161Flags.Rows
+                dgvr.Cells(1).Value = True
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        ElseIf cbFC161AllC.Checked = False Then
+            For Each dgvr In dgFC161Flags.Rows
+                dgvr.Cells(1).Value = False
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC162AllE_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC162AllE.CheckStateChanged
+
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC162AllE.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC162Flags.Rows
+                dgvr.Cells(0).Value = True
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        ElseIf cbFC162AllE.Checked = False Then
+            For Each dgvr In dgFC162Flags.Rows
+                dgvr.Cells(0).Value = False
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC162AllC_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC162AllC.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC162AllC.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC162Flags.Rows
+                dgvr.Cells(1).Value = True
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        ElseIf cbFC162AllC.Checked = False Then
+            For Each dgvr In dgFC162Flags.Rows
+                dgvr.Cells(1).Value = False
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC163AllE_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC163AllE.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC163AllE.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC163Flags.Rows
+                dgvr.Cells(0).Value = True
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        ElseIf cbFC163AllE.Checked = False Then
+            For Each dgvr In dgFC163Flags.Rows
+                dgvr.Cells(0).Value = False
+                If TypeOf dgvr.Cells(0) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(0).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
+    Private Sub cbFC163AllC_CheckStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFC163AllC.CheckStateChanged
+        Dim dgvr As DataGridViewRow
+
+        'Check main checkbox value to select all or unselect all checkboxes
+        If cbFC163AllC.Checked = True Then
+            'Loop through each cell and check each checkbox and give it main checkbox value
+            For Each dgvr In dgFC163Flags.Rows
+                dgvr.Cells(1).Value = True
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        ElseIf cbFC163AllC.Checked = False Then
+            For Each dgvr In dgFC163Flags.Rows
+                dgvr.Cells(1).Value = False
+                If TypeOf dgvr.Cells(1) Is DataGridViewTextBoxCell Then
+                    dgvr.Cells(1).Value = ""
+                End If
+            Next
+        End If
+
+    End Sub
 End Class
 
