@@ -1,5 +1,4 @@
 ﻿Public Class Form1
-    'test comment 2
     'test comment
     'test comment 3
     'A globally unique Identifier.  Each Attachment_B document gets one
